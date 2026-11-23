@@ -1,0 +1,7 @@
+# Track only the website (aolani-web/) and this file.
+/*
+!/.gitignore
+!/aolani-web/
+
+# graphify output, at any depth
+graphify-out/

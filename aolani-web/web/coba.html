@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Tambahkan gaya khusus Anda di sini */
+    </style>
+</head>
+<body>
+
+    <style>
+        /* Gaya umum untuk latar belakang */
+        body {
+            background-color: #f8f9fa;
+        }
+    
+        /* Gaya untuk Jumbotron / Hero Section */
+        .jumbotron {
+            background-image: url('background-image.jpg'); /* Ganti dengan URL gambar latar belakang Anda */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+        }
+    
+        /* Gaya untuk tombol di Jumbotron */
+        .jumbotron .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    
+        /* Gaya untuk Fitur Section */
+        .feature {
+            padding: 40px 0;
+            text-align: center;
+        }
+    
+        /* Gaya untuk kartu Fitur */
+        .feature .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Gaya untuk Harga Section */
+        .pricing {
+            padding: 60px 0;
+        }
+    
+        /* Gaya untuk Kartu Harga */
+        .pricing .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Gaya untuk formulir Kontak */
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Gaya untuk Footer Section */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+    
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Nama Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fitur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Harga</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron / Hero Section -->
+<div class="jumbotron text-center">
+    <img src="img/bali.jpg" alt="" style="height: fit-content; margin-top: 0; margin-left: 0; margin-right: 0;" >
+    <h1>Selamat Datang di Nama Website</h1>
+    <p>Deskripsi singkat tentang produk atau layanan Anda.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Mulai Sekarang</a>
+</div>
+
+<!-- Fitur Section -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2>Fitur 1</h2>
+            <p>Deskripsi fitur 1 Anda di sini.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>Fitur 2</h2>
+            <p>Deskripsi fitur 2 Anda di sini.</p>
+        </div>
+        <div class="col-lg-4">
+            <h2>Fitur 3</h2>
+            <p>Deskripsi fitur 3 Anda di sini.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Harga Section -->
+<div class="container text-center mt-5">
+    <h2>Pilihan Harga</h2>
+    <p>Pilih paket yang sesuai dengan kebutuhan Anda.</p>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    Paket A
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Rp100.000/bulan</h5>
+                    <p class="card-text">Deskripsi paket A di sini.</p>
+                    <a href="#" class="btn btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    Paket B
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Rp200.000/bulan</h5>
+                    <p class="card-text">Deskripsi paket B di sini.</p>
+                    <a href="#" class="btn btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">
+                    Paket C
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Rp300.000/bulan</h5>
+                    <p class="card-text">Deskripsi paket C di sini.</p>
+                    <a href="#" class="btn btn-primary">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Kontak Section -->
+<div class="container text-center mt-5">
+    <h2>Hubungi Kami</h2>
+    <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, silakan hubungi kami.</p>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Nama">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Pesan"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer class="text-center mt-5">
+    <p>&copy; 2023 Nama Website. All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
