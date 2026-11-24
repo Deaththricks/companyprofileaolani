@@ -1164,16 +1164,27 @@ body {
   padding-top: 10px;
 }
 
-  .nav-link:hover::after{
+  .nav-link{
+    transition: color .3s ease;
+  }
+
+  .nav-link::after{
     content:'';
     display: block;
     border-bottom: 3px solid #0B63DC;
     width: 50%;
     margin: auto;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0,7);
     padding-bottom: 5px;
     margin-bottom: -8px;
-  
+    opacity: 0;
+    transform: scaleX(0);
+    transition: transform .3s ease, opacity .3s ease;
+  }
+
+  .nav-link:hover::after,
+  .nav-link:focus-visible::after{
+    opacity: 1;
+    transform: scaleX(1);
   }
 
   .jumbotron {
@@ -1293,7 +1304,6 @@ body {
 
 }
 
-/* Home: Aolani Data manifesto panel */
 .info-panel.manifesto {
   padding: 56px;
 }
@@ -1381,6 +1391,46 @@ body {
   font-family: Georgia, serif;
   font-size: 8rem;
   color: rgba(255, 255, 255, 0.15);
+}
+
+a.card-title[href]:hover,
+a.card-title[href]:focus-visible,
+.cta-link:hover,
+.cta-link:focus-visible {
+  text-decoration: none;
+}
+
+a.card-title[href] h2,
+.cta-link {
+  transition: color .25s ease;
+}
+
+a.card-title[href]:hover h2,
+a.card-title[href]:focus-visible h2,
+.cta-link:hover,
+.cta-link:focus-visible {
+  color: #1d6fb8;
+}
+
+.page-link {
+  transition: background-color .25s ease, color .25s ease, border-color .25s ease;
+}
+
+.page-link:hover,
+.page-link:focus-visible {
+  background-color: #fff;
+  color: #1d6fb8;
+  border-color: #1d6fb8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-link,
+  .nav-link::after,
+  a.card-title[href] h2,
+  .cta-link,
+  .page-link {
+    transition: none;
+  }
 }
 
 @media (max-width: 768px) {
